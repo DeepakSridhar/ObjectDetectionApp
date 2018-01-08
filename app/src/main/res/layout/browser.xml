@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        
+        android:id="@+id/eturl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" >"
+    </EditText>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/bgo"
+        android:layout_width="88dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.67"
+        android:contentDescription="go"
+        android:src="@drawable/go" />
+
+    <ImageButton
+        android:id="@+id/bfb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fb" />
+
+    <ImageButton
+        android:id="@+id/bgm"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="gmail"
+        android:src="@drawable/g" />
+
+    <ImageButton
+        android:id="@+id/btw"
+        android:layout_width="53dp"
+        android:layout_height="65dp"
+        android:contentDescription="twitter"
+        android:src="@drawable/t" />
+
+    <ImageButton
+        android:id="@+id/byo"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="youtube"
+        android:src="@drawable/y" />
+</LinearLayout>
+
+    <WebView
+        android:id="@+id/wv"
+        android:layout_width="fill_parent"
+        android:layout_height="228dp"
+        android:layout_weight="3.41" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go Back" />
+
+        <Button
+            android:id="@+id/button2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go Forward" />
+
+        <Button
+            android:id="@+id/button3"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refresh" />
+
+        <Button
+            android:id="@+id/button4"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear History" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ObjectDetection</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="h">Hello,Welcome to your first Android App</string>
+    <string name="su">SUBTRACT</string>
+    <string name="t">Your Total is :</string>
+    <string name="a">ADD</string>
+    <string name="toggle_camera">Toggle Camera</string>
+    <string name="detect_object">Detect Object</string>
+
+</resources>

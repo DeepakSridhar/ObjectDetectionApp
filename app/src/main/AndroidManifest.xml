@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sridhar.deepak.objectdetection">
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/nn"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Deep">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sridhar.deepak.objectdetection.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.sridhar.deepak.objectdetection.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sridhar.deepak.objectdetection.Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.sridhar.deepak.objectdetection.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sridhar.deepak.objectdetection.Aboutus"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.sridhar.deepak.objectdetection.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sridhar.deepak.objectdetection.Pref"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.sridhar.deepak.objectdetection.PREF" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sridhar.deepak.objectdetection.CatsvsDogs"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.sridhar.deepak.objectdetection.CATSVSDOGS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sridhar.deepak.objectdetection.TensorFlowDemo"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.sridhar.deepak.objectdetection.TENSORFLOWDEMO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
