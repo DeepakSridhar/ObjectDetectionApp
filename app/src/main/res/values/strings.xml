@@ -10,5 +10,8 @@
     <string name="a">ADD</string>
     <string name="toggle_camera">Toggle Camera</string>
     <string name="detect_object">Detect Object</string>
+    <string name="cvd_name">Cats vs Dogs</string>
+    <string name="tensorflow_name">TensorFlow Demo</string>
+    <string name="happy_name">Happy Face Detection</string>
 
 </resources>

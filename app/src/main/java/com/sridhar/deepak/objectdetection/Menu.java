@@ -19,7 +19,7 @@ import android.widget.ListView;
 import java.lang.reflect.Field;
 
 public class Menu extends ListActivity {
-    String classes[]={"CatsvsDogs","TensorFlowDemo"};
+    String classes[]={"CatsvsDogs","TensorFlowDemo","HappyFaceDetector"};
 
 
 

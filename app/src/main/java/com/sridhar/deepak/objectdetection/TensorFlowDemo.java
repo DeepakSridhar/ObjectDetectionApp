@@ -78,7 +78,7 @@ public class TensorFlowDemo extends AppCompatActivity {
 
                 imageViewResult.setImageBitmap(bitmap);
 
-                final List<Classifier.Recognition> results = classifier.recognizeImage(bitmap);
+                final List<Classifier.Recognition> results = classifier.recognizeImage(bitmap,1);
 
                 textViewResult.setText(results.toString());
 

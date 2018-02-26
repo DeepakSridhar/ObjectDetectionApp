@@ -28,14 +28,14 @@ import java.util.concurrent.Executors;
 public class CatsvsDogs extends AppCompatActivity {
 
     private static final int INPUT_SIZE = 224;
-    private static final int IMAGE_MEAN = 117;
-    private static final float IMAGE_STD = 1;
+    private static final int IMAGE_MEAN = 224;
+    private static final float IMAGE_STD = 224;
     private static final String INPUT_NAME = "input";
-    private static final String OUTPUT_NAME = "output";
+    private static final String OUTPUT_NAME = "final_result";
 
-    private static final String MODEL_FILE = "file:///android_asset/tensorflow_inception_graph.pb";
+    private static final String MODEL_FILE = "file:///android_asset/output_graph.pb";
     private static final String LABEL_FILE =
-            "file:///android_asset/imagenet_comp_graph_label_strings.txt";
+            "file:///android_asset/output_labels.txt";
 
     private Classifier classifier;
     private Executor executor = Executors.newSingleThreadExecutor();
@@ -78,7 +78,7 @@ public class CatsvsDogs extends AppCompatActivity {
 
                 imageViewResult.setImageBitmap(bitmap);
 
-                final List<Classifier.Recognition> results = classifier.recognizeImage(bitmap);
+                final List<Classifier.Recognition> results = classifier.recognizeImage(bitmap,1);
 
                 textViewResult.setText(results.toString());
 
