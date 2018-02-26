@@ -1,9 +1,7 @@
 # ObjectDetectionApp
 This Android App recognizes Cats/Dogs from a picture. The python files for fine-tuning are here. https://github.com/DeepakSridhar/deeplearning-finetune  
 
-Happy Face Recognition from here.
-
-https://github.com/DeepakSridhar/Deep-Learning-Coursera/tree/master/Course-4/deep_conv_net_keras
+Happy Face Recognition from here.                                                                                     https://github.com/DeepakSridhar/Deep-Learning-Coursera/tree/master/Course-4/deep_conv_net_keras
 
 ![menu](https://user-images.githubusercontent.com/22285492/36654565-91ad7e62-1a8b-11e8-9f1b-856c060d76df.png)
 ![cat](https://user-images.githubusercontent.com/22285492/36654118-4aa838c0-1a88-11e8-8084-76b2895128f6.png)
